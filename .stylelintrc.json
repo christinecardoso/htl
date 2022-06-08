@@ -9,7 +9,11 @@
   ],
   "rules": {
     "no-descending-specificity": null,
-    "plugin/no-unsupported-browser-features": [true, {
+    "selector-class-pattern": null,
+    "font-family-no-missing-generic-family-keyword": null,
+    "declaration-block-no-duplicate-properties": null,
+    "no-duplicate-selectors": null,
+    "plugin/no-unsupported-browser-features": [null, {
       "severity": "warning"
     }],
     "order/order": [
