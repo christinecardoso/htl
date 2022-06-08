@@ -1,0 +1,33 @@
+{
+  "title" : "It's about time for an oil change at Hometown Lube Miami",
+  "items": [
+    {
+      "name": "Miguel Hernandez",
+      "text": "Tengo varios años viniendo acá y es un servicio impecable y muy honesto, siempre con los mejores precios y una atención sin igual, recomendado 100% y hablan español. Exitos.",
+      "date": "February 20, 2020",
+      "icon": "im-business-man",
+      "rating": "5"
+    },
+    {
+      "name": "Daniel Acero",
+      "text": "Great service! Very fast, professional, and knowledgeable. Look for William. He's the guy you want to talk to!",
+      "date": "February 10, 2020",
+      "icon": "im-business-man",
+      "rating": "4"
+    },
+    {
+      "name": "Chris",
+      "text": "Will never go anywhere else. They close at 6 pm, and I called at 5:15 pm. The manager told me to cover over, wow! No one does that! I was in and out with my oil change in 15 minutes. Thanks, William!",
+      "date": "February 5, 2020",
+      "icon": "im-business-man",
+      "rating": "5"
+    },
+    {
+      "name": "Florencia",
+      "text": "The service was amazing! They're always looking out for the best. Trustworthy staff, I've been to Jiffylube and I always feel taken advantage. I definitely recommend trying this place out.",
+      "date": "February 2, 2020",
+      "icon": "im-business-woman",
+      "rating": "5"
+    }
+  ]
+}

@@ -1,0 +1,18 @@
+<ul class="flex-row space-y-8 lg:flex lg:space-x-6 lg:space-y-0">
+  {% for item in oilchange.items %} {% if item.url == page.url %} {% assign
+  highlight = 'cursor-default' %} {% assign current = 'aria-current="page"' %}
+  {% else %} {% assign highlight = 'underline' %} {% assign current = '' %} {%
+  endif %}
+  <li
+    class="flex flex-1 items-center rounded bg-gradient-to-r from-dark-blue to-[#364193] px-3 py-8 md:items-start"
+  >
+    <i
+      class="flex-none px-4 text-6xl font-icomoon text-orange {{ item.icon }}"
+    ></i>
+    <div class="flex-1">
+      <h2 class="mb-4 text-xl font-bold leading-relaxed">{{ item.text }}</h2>
+      <p class="text-md font-medium leading-loose">{{ item.desc }}</p>
+    </div>
+  </li>
+  {% endfor %}
+</ul>

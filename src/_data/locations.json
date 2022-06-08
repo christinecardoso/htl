@@ -1,0 +1,65 @@
+{
+  "layout": "locations.html",
+  "permalink": "{{ items.url }}/",
+  "title" : "Hometown Lube Locations",
+  "desc": "Find the latest coupons for the Hometown Lube Valvoline Miami locations.",
+  "store_prefix": "Hometown Lube",
+  "store_sufix": "Valvoline Quick Service Oil Change",
+  "directions_title": "Just drive on in",
+  "coupon_exclusion": "Can not be used with any other coupon.",
+  "coupon_valid": "Valid until 30 JUN 2022",
+  "items": [
+    {
+      "title": "FIU Coral Way",
+      "street_address": "10730 SW 24th St",
+      "address": "10730 SW 24th St, Miami, FL 33165",
+      "coords": "25.746337105971204,-80.36955526855871",
+      "phone": "(305) 225-3737",
+      "located_copy": "located in Columbia Shopping Plaza across from the Dunkin Donuts",
+      "text": "FIU Coral Way",
+      "gmap": "https://goo.gl/maps/MZ7BDhE8C7A2jMYC6",
+      "slug": "Oil Change FIU Miami",
+      "footer_prefix": "Valvoline",
+      "coupon": "/images/coupons/2022/JUN/hometown-lube-fiu-coupon.jpg",
+      "seo-title": "Instant Oil Change Near FIU Miami"
+    },
+    {
+      "title": "Kendall",
+      "street_address": "13600 SW 128th St",
+      "address": "13600 SW 128th St, Miami, FL 33186",
+      "coords": "25.64805212677241,-80.41453402579505",
+      "located_copy": "located on the corner of SW 128th St and SW 136th Ave",
+      "phone": "(305) 233-9115",
+      "text": "Kendall",
+      "gmap": "https://g.page/hometownlubekendall?share",
+      "slug": "Oil Change Kendall Miami",
+      "footer_prefix": "Valvoline",
+      "coupon": "/images/coupons/2022/JUN/hometown-lube-kendall-coupon.jpg",
+      "seo-title": "Instant Oil Change Near Kendall - Miami FL - Coupon"
+    },
+    {
+      "title": "Little Havana",
+      "street_address": "3101 SW 8th St",
+      "address": "3101 SW 8th St, Miami, FL 33135",
+      "coords": "25.765203,-80.2452441",
+      "phone": "(305) 541-1559",
+      "gmap": "https://goo.gl/maps/mK1g5qCJcExwADK2A",
+      "text": "Little Havana",
+      "footer_prefix": "Valvoline",
+      "slug": "Oil Change Little Havana Miami",
+      "seo-title": "Instant Oil Change Little Havana, Miami, FL"
+    },
+    {
+      "title": "Galceran Auto Electric",
+      "street_address": "11900 SW 8th St",
+      "address": "11900 SW 8th St, Miami, FL 33184",
+      "coords": "25.76046858811023,-80.38888319970967",
+      "located_copy": "located at the Mobil Service Station",
+      "phone": "(305) 225-8881",
+      "gmap": "https://goo.gl/maps/EcPU2wShy4FB1C5B7",
+      "footer_prefix": "",
+      "text": "Galceran Auto Electric",
+      "slug": "Oil Change Galceran Auto Miami"
+    }
+  ]
+}

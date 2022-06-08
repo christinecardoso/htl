@@ -1,0 +1,21 @@
+<ul class="flex-row space-y-8 md:flex md:space-x-3 md:space-y-0">
+  {% for item in reviews.items %} {% if item.url == page.url %} {% assign
+  highlight = 'cursor-default' %} {% assign current = 'aria-current="page"' %}
+  {% else %} {% assign highlight = 'underline' %} {% assign current = '' %} {%
+  endif %}
+  <li class="flex-1 space-y-8 rating-{{ item.rating }} relative">
+    <div class="flex flex-1 space-x-2">
+      <i
+        class="text-3xl font-icomoon text-bright-blue {{ item.icon }} rounded"
+      ></i>
+      <div class="flex-1 font-medium text-header-copy">
+        <p class="text-md">{{ item.name }}</p>
+        <p class="text-xs">{{ item.date }}</p>
+      </div>
+    </div>
+    <p class="review-copy text-md mb-4 pb-8 leading-relaxed text-body-copy">
+      {{ item.text }}
+    </p>
+  </li>
+  {% endfor %}
+</ul>

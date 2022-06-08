@@ -1,7 +1,8 @@
 <!DOCTYPE html>
-<html class="leading-tight text-gray-900 antialiased" lang="en">
+<html class="text-gray-900 leading-tight antialiased" lang="en">
   <head>
     {% include "partials/site-head.html" %}
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApXjqPtmM7cm78vdnfydAN79k9PNQUpjQ"></script>
   </head>
   <body
     class="min-h-screen bg-white"
@@ -11,10 +12,27 @@
   >
     {% include "partials/site-header.html" %}
 
-    <div class="py-10">{% block content %}{% endblock %}</div>
+    <div class="">{% block content %}{% endblock %}</div>
 
-    {% include "partials/banner.html" %}
-
+    <footer class="max-w-1xl mx-auto bg-dark-blue text-white">
+      <div
+        class="mx-auto max-w-6xl space-y-10 px-4 py-4 pt-10 sm:px-6 md:flex md:space-x-16 md:space-y-0 md:pt-14 xl:px-0"
+      >
+        {% block store %} {% endblock %} {% include "partials/site-footer.html"
+        %}
+      </div>
+      <div class="footer-bar mt-5 border-t-2 border-lightest-blue">
+        <div
+          class="mx-auto flex max-w-6xl content-between px-4 py-6 text-xs text-light-link sm:px-6 xl:px-0"
+        >
+          <p class="flex-1">{{ site.copyright}}</p>
+          <span class="w-8 flex-none"
+            ><img src="/images/logos/valvoline-logo-v.png" alt="Valvoline logo"
+          /></span>
+        </div>
+      </div>
+    </footer>
     <script type="module" src="/main.js"></script>
+    {% block gmap %} {% endblock %}
   </body>
 </html>

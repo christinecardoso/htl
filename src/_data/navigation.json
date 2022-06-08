@@ -5,8 +5,26 @@
       "url": "/"
     },
     {
-      "text": "About",
-      "url": "/about/"
+      "text": "Coupons",
+      "url": "/coupons/"
+    },
+    {
+      "text": "Reviews",
+      "url": "/reviews/"
+    }
+  ],
+  "footer_items": [
+    {
+      "text": "Quick Lube",
+      "url": "https://www.hometownlube.com/Auto-Services/Quick-Lube"
+    },
+    {
+      "text": "Auto Repair",
+      "url": "https://www.hometownlube.com/Auto-Services"
+    },
+    {
+      "text": "Contact",
+      "url": "https://www.hometownlube.com/Contact"
     }
   ]
 }

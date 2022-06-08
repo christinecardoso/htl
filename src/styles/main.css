@@ -1,3 +1,305 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 400;
+    src: url('fonts/Jost-Book.woff2') format('woff2'), url('fonts/Jost-Book.woff') format('woff');
+}
+
+@font-face {
+    font-family: Jost;
+    font-style: normal;
+    font-weight: 500;
+    src: url('fonts/Jost-Medium.woff2') format('woff2'), url('fonts/Jost-Medium.woff') format('woff');
+}
+
+@font-face {
+    font-family: Icons;
+    font-style: normal;
+    font-weight: normal;
+    src: url('fonts/icons/icons.eot');
+    src: url('fonts/icons/icons.eot?#iefix-rdmvgc') format('embedded-opentype'), url('fonts/icons/icons.woff') format('woff'), url('fonts/icons/icons.ttf') format('truetype'), url('fonts/icons/icons.svg?-rdmvgc#icomoon') format('svg');
+}
+
+.theme-blue {
+  @apply bg-gradient-to-r from-dark-blue to-[#364193];
+}
+
+.theme-blue i {
+  @apply text-orange;
+}
+
+.theme-orange {
+  @apply border-orange border-2 text-copy-dark;
+}
+
+.theme-orange i {
+  @apply text-orange;
+}
+
+/*
+
+# RATINGS
+===================================================================
+*/
+
+[class*=rating-] > p::before {
+  background: url('/images/star.svg') repeat-x;
+  background-position: left center;
+  background-size: 17px 17px;
+  bottom: 0;
+  content: '';
+  height: 17px;
+  position: absolute;
+  width: 84px;
+}
+
+[class*=rating-] > p:not(.testimonial-info) {
+    margin-bottom: 30px;
+}
+
+.rating-4 > p:not(.testimonial-info)::before {
+    width: 64px;
+}
+
+/*
+
+# ICONS
+===================================================================
+*/
+
+[class^="icon-"]::before,
+[class*=" icon-"]::before {
+    font-family: Icons;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: normal;
+    speak: none;
+    text-transform: none;
+    text-transform: none;
+}
+
+.rounded::before{
+  @apply rounded-full bg-bright-blue-light shadow p-2;
+}
+
+.icon-user::before {
+    content: "\6a";
+}
+
+.icon-bookmark::before {
+    content: "\6c";
+}
+
+.icon-share::before {
+    content: "\6d";
+}
+
+.icon-quote::before {
+    content: "\65";
+}
+
+.icon-calendar::before {
+    content: "\6e";
+}
+
+.icon-facebook::before {
+    content: "\6b";
+}
+
+.icon-twitter::before {
+    content: "\6f";
+}
+
+.icon-instagram::before {
+    content: "\70";
+}
+
+.icon-pinterest::before {
+    content: "\71";
+}
+
+.icon-linkedin::before {
+    content: "\72";
+}
+
+.icon-youtube::before {
+    content: "\73";
+}
+
+/*
+-------------------------------------------------------------------
+ICON LINK - COMPONENT
+-------------------------------------------------------------------
+*/
+.icon-links {
+    display: flex;
+}
+
+.icon-links.align-center {
+    justify-content: center;
+}
+
+.icon-links.align-right {
+    justify-content: flex-end;
+}
+
+.icon-links a {
+    cursor: pointer;
+    display: block;
+    height: 30px;
+    margin-right: 15px;
+    position: relative;
+    width: 30px;
+}
+
+.icon-links a i {
+    display: block;
+    font-size: 18px;
+    left: 50%;
+    margin: 0;
+    padding: 0;
+    position: absolute;
+    top: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    transition: all .5s;
+}
+
+.icon-links {
+    display: flex;
+}
+
+.icon-links-grid a {
+    border-right: none;
+    border-style: solid;
+    border-width: 1px;
+    height: 40px;
+    margin: 0;
+    width: 50px;
+}
+
+.icon-links-grid a i {
+    transition: all .1s;
+}
+
+.icon-links-grid a:hover i {
+    color: #FFF;
+}
+
+.icon-links-grid a:first-child {
+    border-bottom-left-radius: 3px;
+    border-top-left-radius: 3px;
+}
+
+.icon-links-grid a:last-of-type {
+    border-bottom-right-radius: 3px;
+    border-right-style: solid;
+    border-right-width: 1px;
+    border-top-right-radius: 3px;
+}
+
+.icon-links-button a {
+    border-radius: 3px;
+    height: 40px;
+    transition: all .5s;
+    width: 50px;
+}
+
+.icon-links-button.full-width a {
+    width: 100%;
+}
+
+.icon-links-popup {
+    padding-left: 35px;
+    position: relative;
+}
+
+.icon-links-popup > i {
+    cursor: pointer;
+    display: block;
+    font-size: 16px;
+    height: 20px;
+    left: 0;
+    position: absolute;
+    width: 20px;
+}
+
+.icon-links-popup > i::before {
+    content: "\6d";
+    font-family: Icons;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: normal;
+    text-transform: none;
+}
+
+.icon-links-popup > div {
+    display: flex;
+    position: relative;
+    visibility: hidden;
+}
+
+.icon-links-popup > div > a {
+    opacity: 0;
+    transition: all 0.5s;
+}
+
+.icon-links-popup.active > div {
+    visibility: visible;
+}
+
+.icon-links-popup.active > div > a {
+    opacity: 1;
+}
+
+.icon-links.icon-lg i {
+    font-size: 25px;
+}
+
+.icon-links.icon-lg a {
+    margin-right: 25px;
+}
+
+.icon-links-grid.icon-lg a {
+    height: 45px;
+    margin-right: 0;
+    width: 60px;
+}
+
+.icon-links-button.icon-lg a {
+    height: 45px;
+    width: 60px;
+}
+
+.icon-links-popup.icon-lg {
+    padding-left: 45px;
+}
+
+.icon-links-popup.icon-lg > i {
+    height: 25px;
+    width: 25px;
+}
+
+.icon-links-popup.icon-lg > i::before {
+    font-size: 25px;
+}
+
+.icon-links > a:last-child {
+    margin-right: 0;
+}
+
+.icon-social a i {
+    transform: translateX(-50%) translateY(calc(-50% + 2px));
+}
+
+/*
+-------------------------------------------------------------------
+SOCIAL LINK - COMPONENT
+-------------------------------------------------------------------
+*/
+.social-colors.icon-links-button i, .social-colors.icon-links-grid i, .social-colors-hover.icon-links-button i, .social-colors-hover.icon-links-grid i {
+    transition: none;
+}

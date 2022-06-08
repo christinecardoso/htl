@@ -1,17 +1,18 @@
 <header>
-  <nav class="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
-    <div class="flex h-16 items-center justify-between">
-      <figure class="flex flex-shrink-0 items-center space-x-1">
-        <img
-          alt="11st starter-kit logo"
-          class="h-8 w-auto"
-          src="/images/11st-logo.svg"
-          height="32"
-          width="32"
-        />
-        <figcaption>Starter-Kit</figcaption>
-      </figure>
-      <ul class="flex space-x-4">
+  <nav class="sticky top-0 z-30 mx-auto px-4 shadow-md sm:px-6 lg:px-8">
+    <div class="mx-auto flex h-auto max-w-6xl items-center justify-between">
+      <a href="{{site.url}}">
+        <figure class="flex-none flex-shrink-0 items-center space-x-1">
+          <img
+            alt="Valvoline Miami Hometown Lube logo"
+            class="max-w h-20 w-auto md:h-28"
+            src="/images/logos/valvoline-miami-hometown-lube.png"
+          />
+          <!-- <figcaption>Starter-Kit</figcaption> -->
+        </figure>
+      </a>
+      {{ heading }} {% if nav_location %} {{ nav_location }} {% else %}
+      <ul class="flex items-center space-x-4">
         {% for item in navigation.items %} {% if item.url == page.url %} {%
         assign highlight = 'cursor-default' %} {% assign current =
         'aria-current="page"' %} {% else %} {% assign highlight = 'underline' %}
@@ -28,15 +29,8 @@
           </a>
         </li>
         {% endfor %}
-        <li>
-          <a
-            href="https://github.com/stefanfrede/11st-starter-kit/"
-            class="text-base font-bold underline hover:text-green-900"
-          >
-            GitHub
-          </a>
-        </li>
       </ul>
+      {% endif %}
     </div>
   </nav>
 </header>

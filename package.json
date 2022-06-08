@@ -71,6 +71,7 @@
     "autoprefixer": "^10.2.4",
     "browserslist": "^4.16.6",
     "cross-env": "^7.0.3",
+    "eleventy-plugin-googlestaticmaps": "^1.0.2",
     "eslint": "^8.0.1",
     "eslint-config-prettier": "^8.3.0",
     "eslint-plugin-compat": "^4.0.0",
@@ -97,6 +98,7 @@
   "dependencies": {
     "alpinejs": "^3.0.1",
     "core-js": "^3.20.2",
+    "latest": "^0.2.0",
     "vite": "^2.7.13"
   }
 }

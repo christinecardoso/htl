@@ -1,4 +1,8 @@
 {
-  "name": "11ty + Vite + Tailwind CSS",
-  "url": "https://11st-starter-kit.netlify.app"
+  "name": "Hometown Lube Valvoline Miami",
+  "url_local": "https://coupon.hometownlube.com/",
+  "url": "http://localhost:3000/",
+  "facebook": "https://www.facebook.com/hometownlube/",
+  "instagram": "https://www.instagram.com/hometownlube/",
+  "copyright": "&copy; Digimix 2020. Digimix is a leading digital marketing company for Valvoline franchises."
 }

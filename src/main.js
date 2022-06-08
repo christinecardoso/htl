@@ -1,4 +1,6 @@
 import './styles/main.css';
+import './styles/icons/iconsmind/line-icons.min.css';
+import './styles/icons/iconsmind/solid-icons.min.css';
 
 import Alpine from 'alpinejs';
 

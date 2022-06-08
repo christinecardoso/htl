@@ -1,0 +1,19 @@
+<h3 class="mb-4 font-bold">{{ locations.title }}</h3>
+<ul class="space-y-3">
+  {% for item in locations.items %} {% assign slug = item.slug | slug %} {% if
+  slug == location_slug %} {% assign highlight = 'cursor-default' %} {% assign
+  current = 'aria-current="page"' %} {% else %} {% assign highlight =
+  'underline' %} {% assign current = '' %} {% endif %}
+  <li class="text-base font-medium">
+    <a
+      href="{{site.url}}{{ slug }}/"
+      class="text-light-link {{ highlight }}"
+      {{
+      current
+      }}
+    >
+      {{ item.footer_prefix }} {{ item.text }}
+    </a>
+  </li>
+  {% endfor %}
+</ul>
