@@ -6,6 +6,8 @@ module.exports = {
     colors: {
       white: '#ffffff',
       'dark-blue': '#001D5f',
+      'dark-blue-soft': '#364193',
+      crimson: '#811b2a',
       copy: {
         light: '#ffffff2e',
         DEFAULT: '#587790',
@@ -35,6 +37,7 @@ module.exports = {
         DEFAULT: '#e2231a',
         dark: '#b41c14',
       },
+      yellow: '#edda65',
       gold: '#e6bc3b',
       orange: {
         light: '#dca555',

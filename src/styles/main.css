@@ -24,12 +24,34 @@
     src: url('fonts/icons/icons.eot?#iefix-rdmvgc') format('embedded-opentype'), url('fonts/icons/icons.woff') format('woff'), url('fonts/icons/icons.ttf') format('truetype'), url('fonts/icons/icons.svg?-rdmvgc#icomoon') format('svg');
 }
 
+.theme-bright-blue {
+  @apply border-bright-blue border-2 text-white;
+}
+
+.theme-bright-blue i {
+  @apply text-gold !important;
+}
+
 .theme-blue {
-  @apply bg-gradient-to-r from-dark-blue to-[#364193];
+  @apply bg-gradient-to-r from-dark-blue to-crimson;
 }
 
 .theme-blue i {
   @apply text-orange;
+}
+
+.theme-blue p,
+.theme-bright-blue p {
+  @apply text-white;
+}
+
+.theme-blue .card-title,
+.theme-bright-blue .card-title {
+  @apply text-white;
+}
+
+.theme-blue .eyebrow-title {
+  @apply text-bright-blue;
 }
 
 .theme-orange {
@@ -38,6 +60,15 @@
 
 .theme-orange i {
   @apply text-orange;
+}
+
+
+.card-title {
+  @apply mt-6 text-xl font-bold leading-tight;
+}
+
+.eyebrow-title {
+  @apply font-bold mb-2 max-w-6xl mx-auto;
 }
 
 /*
