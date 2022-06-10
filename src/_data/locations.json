@@ -20,7 +20,7 @@
       "gmap": "https://goo.gl/maps/MZ7BDhE8C7A2jMYC6",
       "slug": "Oil Change FIU Miami",
       "footer_prefix": "Valvoline",
-      "coupon": "/images/coupons/2022/JUN/hometown-lube-fiu-coupon.jpg",
+      "coupon": "./src/assets/hometown-lube-fiu-coupon.jpeg",
       "seo-title": "Instant Oil Change Near FIU Miami"
     },
     {
@@ -34,7 +34,7 @@
       "gmap": "https://g.page/hometownlubekendall?share",
       "slug": "Oil Change Kendall Miami",
       "footer_prefix": "Valvoline",
-      "coupon": "/images/coupons/2022/JUN/hometown-lube-kendall-coupon.jpg",
+      "coupon": "./src/assets/hometown-lube-kendall-coupon.jpeg",
       "seo-title": "Instant Oil Change Near Kendall - Miami FL - Coupon"
     },
     {
