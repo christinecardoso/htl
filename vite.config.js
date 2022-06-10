@@ -3,6 +3,7 @@
 /* global resolve */
 import { defineConfig } from 'vite';
 import { VitePWA } from 'vite-plugin-pwa';
+import { generateSitemap } from 'vite-ssg-sitemap';
 
 const glob = require('fast-glob');
 const path = require('path');
@@ -41,9 +42,10 @@ export default defineConfig({
         'apple-touch-icon.png',
       ],
       manifest: {
-        name: '11st-Starter-Kit',
-        short_name: '11st-Starter-Kit',
-        description: '11ty, powered by Vite with Tailwind CSS and Alpine.js.',
+        name: 'Hometown Lube Valvoline Miami',
+        short_name: 'Hometown Lube Valvoline Miami',
+        description:
+          'Save on quick service, instant oil changes with our monthly coupons & savings at Hometown Lube Valvoline Miami.',
         scope: '/',
         start_url: '/',
         display: 'standalone',
@@ -110,4 +112,9 @@ export default defineConfig({
       },
     }),
   ],
+  ssgOptions: {
+    onFinished() {
+      generateSitemap();
+    },
+  },
 });

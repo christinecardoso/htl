@@ -18,15 +18,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' https://rsms.me https://api.netlify.com;
-    img-src 'self' 'unsafe-inline' https://www.google.com;
-    media-src 'self' https://www.youtube.com;
-    style-src 'self' https://rsms.me 'unsafe-inline' https://fonts.googleapis.com;
-    script-src  'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com connect.facebook.net https://www.google-analytics.com 'nonce-{script value}' 'strict-dynamic' https: 'unsafe-eval';
-    script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com;
-    connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com data: blob:;
-    worker-src 'self' blob:;
-    frame-src 'self' https://app.frame.io https://www.youtube.com/ https://vimeo.com"
+    Content-Security-Policy = "default-src 'self' https://rsms.me https://api.netlify.com 'unsafe-inline' https://www.google-analytics.com; img-src 'self' 'unsafe-inline' https://www.google.com; media-src 'self' https://www.youtube.com; style-src 'self' https://rsms.me 'unsafe-inline' https://fonts.googleapis.com; script-src 'self' 'unsafe-eval' 'unsafe-inline' https://www.googletagmanager.com connect.facebook.net https://www.google-analytics.com 'nonce-{script value}' 'strict-dynamic' https: 'unsafe-eval'; script-src-elem 'self' 'unsafe-inline' 'unsafe-eval' https://www.google-analytics.com; connect-src 'self' https://*.googleapis.com *.google.com https://*.gstatic.com data: blob:; worker-src 'self' blob:; frame-src 'self' https://app.frame.io https://www.youtube.com/ https://vimeo.com"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
