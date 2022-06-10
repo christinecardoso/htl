@@ -37,7 +37,7 @@ const toAbsoluteImageUrl = async (src, width = null) => {
   return toAbsoluteUrl(imageUrl);
 };
 
-async function imageShortcode(src, alt, sizes, classattr='') {
+async function imageShortcode(src, alt, sizes) {
 
   let metadata = await Image(src, {
     widths: [25, 320, 640, 960, 1200, 1800, 2400],
@@ -49,7 +49,6 @@ async function imageShortcode(src, alt, sizes, classattr='') {
   let imageAttributes = {
     alt,
     sizes,
-    class: classattr,
     loading: "lazy",
     decoding: "async",
   };
