@@ -334,3 +334,104 @@ SOCIAL LINK - COMPONENT
 .social-colors.icon-links-button i, .social-colors.icon-links-grid i, .social-colors-hover.icon-links-button i, .social-colors-hover.icon-links-grid i {
     transition: none;
 }
+
+/*
+-------------------------------------------------------------------
+CSSBox - COMPONENT
+-------------------------------------------------------------------
+*/
+
+/* The work below, CSSBox, is released under the Creative Commons
+   Attribution-ShareAlike 4.0 license and is available on
+   https://github.com/TheLastProject/CSSBox. You are not required to add
+   additional credit to your website, just leave the above text in this file */
+
+div.cssbox {
+  display: inline-block;
+}
+
+span.cssbox_full {
+  background-color: rgb(0 0 0 / 80%);
+  cursor: default;
+  height: 100%;
+  left: 0;
+  opacity: 0;
+  pointer-events: none;
+  position: fixed;
+  top: 0;
+  transition: opacity 0.5s linear;
+  visibility: hidden;
+  width: 100%;
+  z-index: 999999;
+}
+
+span.cssbox_full img {
+  background-color: white;
+  box-shadow: 0 0 20px black;
+  left: 50%;
+  margin: 0;
+  margin-right: -50%;
+  max-height: 90%;
+  max-width: 90%;
+  padding: 0;
+  position: fixed;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  visibility: hidden;
+}
+
+a.cssbox_close,
+a.cssbox_prev,
+a.cssbox_next {
+  color: white;
+  font-size: 36px;
+  position: fixed;
+  text-decoration: none;
+  visibility: hidden;
+  z-index: 999999;
+}
+
+a.cssbox_close {
+  right: 1%;
+  top: 1%
+}
+
+a.cssbox_close::after {
+  content: '\00d7';
+}
+
+a.cssbox_prev,
+a.cssbox_next {
+  top: 50%;
+  transform: translate(0%, -50%);
+}
+
+a.cssbox_prev {
+  left: 5%;
+}
+
+a.cssbox_next {
+  right: 5%;
+}
+
+.cssbox a:target > picture {
+  @apply hover:scale-125;
+}
+
+
+a:target ~ a.cssbox_close,
+a:target ~ a.cssbox_prev,
+a:target ~ a.cssbox_next,
+.cssbox a:target > picture + span.cssbox_full img {
+  visibility: visible;
+}
+
+a:target > img.cssbox_thumb + span.cssbox_full,
+.cssbox a:target > picture + span.cssbox_full {
+  opacity: 1;
+  pointer-events: initial;
+  visibility: visible;
+}
+
+
+/* This is the end of CSSBox */

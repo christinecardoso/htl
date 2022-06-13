@@ -29,10 +29,17 @@
           </span>
         </a>
       </div>
+
       <div class="lg:flex-1">
-        <a href="{{ location.coupon | toAbsoluteImageUrl }}">
-          {% image location.coupon, "image alt text", "100vw" %}
-        </a>
+        <div class="cssbox">
+          <a id="image1" href="#image1">
+            {% image location.coupon, "image alt text", "100vw" %}
+            <span class="cssbox_full">
+              <img src="{% imageUrl location.coupon, '' %}" />
+            </span>
+          </a>
+          <a class="cssbox_close" href=""></a>
+        </div>
       </div>
     </div>
 
