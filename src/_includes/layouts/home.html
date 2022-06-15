@@ -9,6 +9,7 @@
     x-data="{ open: false }"
     x-init="() => { setTimeout(() => { open = true }, 1500); }"
   >
+    {% include "partials/tagmanager.html" %}
     <div class="">
       <header class="mx-auto max-w-6xl py-2">
         <a href="{{ site_url }}">
