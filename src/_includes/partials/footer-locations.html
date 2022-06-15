@@ -6,7 +6,7 @@
   'underline' %} {% assign current = '' %} {% endif %}
   <li class="text-base font-medium">
     <a
-      href="{{site.url}}{{ slug }}/"
+      href="{{ site_url | append: slug }}/"
       class="text-light-link {{ highlight }}"
       {{
       current
