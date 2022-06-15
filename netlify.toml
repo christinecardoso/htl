@@ -18,7 +18,7 @@
 [[headers]]
   for = "/*"
   [headers.values]
-    Content-Security-Policy = "default-src 'self' https://rsms.me https://api.netlify.com https://www.googleadservices.com *.googleapis.com *.gstatic.com; style-src 'self' https://rsms.me *.googleapis.com 'unsafe-inline'; script-src 'self' 'unsafe-eval' 'unsafe-inline' www.google-analytics.com ajax.googleapis.com apis.google.com www.googletagmanager.com *.googleapis.com; img-src 'self' data: https://www.googleadservices.com https://ssl.gstatic.com https://www.gstatic.com https://www.googletagmanager.com; worker-src 'self' blob:;"
+    Content-Security-Policy = "default-src 'self' https://rsms.me https://api.netlify.com https://www.googleadservices.com *.googleapis.com *.gstatic.com; style-src 'self' https://rsms.me *.googleapis.com 'unsafe-inline'; script-src 'self' 'unsafe-eval' 'unsafe-inline' www.google-analytics.com ajax.googleapis.com apis.google.com www.googletagmanager.com *.googleapis.com; img-src 'self' data: https://www.googleadservices.com www.w3.org https://ssl.gstatic.com https://www.gstatic.com https://www.googletagmanager.com; worker-src 'self' blob:;"
     X-Content-Type-Options = "nosniff"
     X-Frame-Options = "DENY"
     X-XSS-Protection = "1; mode=block"
