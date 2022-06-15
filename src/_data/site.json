@@ -4,6 +4,7 @@
   "url_local": "http://localhost:3000/",
   "facebook": "https://www.facebook.com/hometownlube/",
   "instagram": "https://www.instagram.com/hometownlube/",
-  "gtag": "AW-952333934",
+  "gtag_old": "AW-952333934",
+  "gtag": "G-R058NEXKT3",
   "copyright": "&copy; Digimix 2020. Digimix is a leading digital marketing company for Valvoline franchises."
 }
