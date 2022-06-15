@@ -91,7 +91,16 @@
   </div>
 </main>
 {% endblock %} {% layout "layouts/base.html" %} {% block gmap %}
-<script type="module" src="/scripts/gmaps.js"></script>
+<script
+  type="text/javascript"
+  async
+  nonce="{script value}"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApXjqPtmM7cm78vdnfydAN79k9PNQUpjQ"
+></script>
+<script
+  type="module"
+  src="{{ site_url | append: 'scripts/gmaps.js' }}"
+></script>
 {% endblock %} {% layout "layouts/base.html" %} {% block store %}
 <div class="flex-1 space-y-4 font-medium">
   <h3 class="">
