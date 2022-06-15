@@ -1,0 +1,19 @@
+<div
+  id="map"
+  class="w-100 drop-shadow-6xl mx-auto rounded shadow"
+  data-marker="media/marker.png"
+  data-name="{{ location.footer_prefix }} {{ location.title }}"
+  data-coords="{{ location.coords }}"
+  data-zoom="18"
+  style="height: 400px"
+></div>
+
+{% layout "layouts/base.html" %} {% block gmap %}
+<script
+  type="text/javascript"
+  async
+  nonce="{script value}"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyApXjqPtmM7cm78vdnfydAN79k9PNQUpjQ"
+></script>
+<script type="module" src="/gmaps.js"></script>
+{% endblock %}

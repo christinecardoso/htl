@@ -34,36 +34,3 @@
   </li>
   {% endfor %}
 </ul>
-
-<div id="map" class="w-100" style="height: 400px"></div>
-<script type="text/javascript">
-  var locations = [
-    ['Hometown Lube FIU Coral Way', 25.746337105971204, -80.36955526855871, 1],
-    ['Hometown Lube Kendall', 25.64805212677241, -80.41453402579505, 2],
-    ['Hometown Lube Little Havana', 25.765203, -80.2452441, 3],
-    ['Galceran Auto Electric', 25.76046858811023, -80.38888319970967, 4],
-  ];
-  var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 10,
-    center: new google.maps.LatLng(25.746337105971204, -80.36955526855871),
-    mapTypeId: google.maps.MapTypeId.ROADMAP,
-  });
-  var infowindow = new google.maps.InfoWindow();
-  var marker, i;
-  for (i = 0; i < locations.length; i++) {
-    marker = new google.maps.Marker({
-      position: new google.maps.LatLng(locations[i][1], locations[i][2]),
-      map: map,
-    });
-    google.maps.event.addListener(
-      marker,
-      'click',
-      (function (marker, i) {
-        return function () {
-          infowindow.setContent(locations[i][0]);
-          infowindow.open(map, marker);
-        };
-      })(marker, i),
-    );
-  }
-</script>
