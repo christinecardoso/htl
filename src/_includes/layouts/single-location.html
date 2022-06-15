@@ -21,7 +21,7 @@
         <p class="text-sm">*{{locations.coupon_exclusion}}</p>
         <a
           class="text group mt-8 inline-flex h-9 items-center whitespace-nowrap rounded-full bg-red p-6 px-3 text-xl font-semibold text-white hover:bg-red-light"
-          href="{% imageUrl location.coupon, '' %}"
+          href="#coupon"
         >
           <span class="pl-4"
             >Get the Coupon
@@ -32,7 +32,7 @@
 
       <div class="lg:flex-1">
         <div class="cssbox">
-          <a id="image1" href="#image1">
+          <a id="coupon" href="#coupon">
             {% image location.coupon, "image alt text", "100vw" %}
             <span class="cssbox_full">
               <img src="{% imageUrl location.coupon, '' %}" />
