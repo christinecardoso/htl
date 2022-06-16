@@ -1,7 +1,7 @@
 <div class="flex-1">{% include "partials/footer-locations.html" %}</div>
 <div class="flex-1">
-  <h3 class="mb-4 font-bold">Learn More</h3>
-  <ul class="space-y-3 font-medium">
+  <h3 class="footer-nav-heading">Learn More</h3>
+  <ul class="footer-nav">
     {% for item in navigation.footer_items %} {% if item.url == page.url %} {%
     assign highlight = 'cursor-default' %} {% assign current =
     'aria-current="page"' %} {% else %} {% assign highlight = 'underline' %} {%
@@ -9,7 +9,7 @@
     <li class="">
       <a
         href="{{ item.url }}"
-        class="text-base text-light-link {{ highlight }}"
+        class="text-bright-blue hover:text-bright-blue-lighter {{ highlight }}"
         {{
         current
         }}
@@ -21,14 +21,16 @@
   </ul>
 </div>
 <div class="flex-1">
-  <h3 class="mb-4 font-bold">Follow Us</h3>
+  <h3 class="footer-nav-heading">Follow Us</h3>
   <div class="icon-links icon-social icon-links-grid social-colors">
-    <a href="{{ site.facebook }}" class="facebook border-facebook bg-facebook"
+    <a
+      href="{{ site.facebook }}"
+      class="facebook border-facebook bg-facebook hover:bg-facebook-light"
       ><i class="im-facebook-2"></i
     ></a>
     <a
       href="{{ site.instagram }}"
-      class="instagram border-instagram bg-instagram"
+      class="instagram border-instagram bg-instagram hover:bg-instagram-light"
       ><i class="im-instagram"></i
     ></a>
   </div>
