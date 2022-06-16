@@ -24,6 +24,39 @@
     src: url('fonts/icons/icons.eot?#iefix-rdmvgc') format('embedded-opentype'), url('fonts/icons/icons.woff') format('woff'), url('fonts/icons/icons.ttf') format('truetype'), url('fonts/icons/icons.svg?-rdmvgc#icomoon') format('svg');
 }
 
+.navbar-container {
+  @apply mx-auto md:flex h-auto max-w-6xl items-center;
+}
+
+.navbar-logo,
+.navbar-location-links {
+  @apply md:flex-1;
+}
+
+.navbar-logo img {
+  @apply mx-auto h-20 w-auto md:h-28 md:mx-0;
+}
+
+.navbar-location-links {
+  @apply flex text-center justify-between md:flex-wrap md:justify-end md:space-x-2;
+}
+
+.navbar-location-links i {
+  @apply text-red;
+}
+
+.navbar-page_title {
+  @apply hidden md:flex-1 flex mt-4 mb-4 self-stretch justify-center items-center border-off-white flex-col;
+}
+
+.navbar-page_title h1 {
+  @apply lg:text-3xl font-bold leading-tight text-header-copy;
+}
+
+.navbar-page_title p {
+  @apply hidden lg:block mb-0;
+}
+
 .theme-bright-blue {
   @apply border-bright-blue border-2 text-white;
 }
