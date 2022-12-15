@@ -8,5 +8,5 @@ meta:
 intro:
   title: 'Save Now Drive More'
   desc:
-    'Keep your car running smoothly in the Miami heat. Unlock savings of $20 off your next oil change at Hometown Lube Valvoline FIU/Coral Way and Kendall locations with our coupons. Ends 6/30.'
+    'Keep your car running smoothly in the Miami heat. Unlock savings off your next oil change at Hometown Lube Valvoline FIU/Coral Way and Kendall locations with our coupons.'
 ---
