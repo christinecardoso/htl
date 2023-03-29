@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html class="text-gray-900 leading-tight antialiased" lang="en">
+  <head>
+    {% include "partials/site-head.html" %}
+  </head>
+  <body
+    class="min-h-screen bg-white"
+    data-env="{{ node.env }}"
+    x-data="{ open: false }"
+    x-init="() => { setTimeout(() => { open = true }, 1500); }"
+  >
+    {% include "partials/tagmanager.html" %}
+    <div class="">
+      <header class="mx-auto max-w-6xl py-2">
+        <a href="{{ site_url }}">
+          <figure class="flex-none flex-shrink-0 items-center space-x-1">
+            <img
+              alt="Valvoline Miami Hometown Lube logo"
+              class="max-w mx-auto h-20 w-auto md:h-28"
+              src="/images/logos/valvoline-miami-hometown-lube.png"
+            />
+            <!-- <figcaption>Starter-Kit</figcaption> -->
+          </figure>
+        </a>
+      </header>
+      <main id="main-content" class="theme-blue py-5" tabindex="-1">
+        <div class="mx-auto mt-5 max-w-2xl px-4 sm:px-6 lg:px-8">
+          <h1
+            class="bg-gradient-to-r from-orange to-red bg-clip-text text-center text-3xl font-bold leading-tight text-transparent"
+          >
+            {{ intro.title }}
+          </h1>
+
+          <div class="py-8 text-center leading-8 text-body-copy">
+            <p class="text-xl">{{ intro.desc }}</p>
+          </div>
+        </div>
+      </main>
+      <div class="mx-auto max-w-2xl px-4 sm:px-6 lg:px-8">
+        <div class="text-gray-500 prose prose-lg prose-gray">{{ content }}</div>
+      </div>
+    </div>
+    <footer class="max-w-1xl mx-auto bg-dark-blue text-white">
+      <div
+        class="mx-auto max-w-6xl space-y-10 px-4 py-4 pt-10 sm:px-6 md:flex md:space-x-16 md:space-y-0 md:pt-14 xl:px-0"
+      >
+        {% include "partials/site-footer.html" %}
+      </div>
+      <div class="footer-bar">
+        <div
+          class="mx-auto flex max-w-6xl content-between px-4 py-6 text-xs text-light-link sm:px-6 xl:px-0"
+        >
+          <p class="flex-1">{{ site.copyright}}</p>
+          <span class="w-8 flex-none"
+            ><img src="/images/logos/valvoline-logo-v.png" alt="Valvoline logo"
+          /></span>
+        </div>
+      </div>
+    </footer>
+    <script type="module" src="/main.js"></script>
+  </body>
+</html>
